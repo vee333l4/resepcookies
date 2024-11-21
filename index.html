@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="atas"><Table><marquee>RESEP SOFT COOKIES BY VEE</marquee></Table></h1></body>
+
+    <img src="gambar/cookies.jfif" width="500" height="300" alt="">
+    <div>
+    <p>
+        Cookie merupakan kata bahasa Inggris yang berasal dari bahasa Belanda koekie yang berarti "kue kecil". 
+        <br>
+        Asal usul cookie dimulai di Persia pada abad ke-7 setelah penggunaan gula menjadi umum di wilayah tersebut. 
+        <br>
+        Setelah itu cookie menyebar ke Eropa melalui penyebaran Muslim di Spanyol. Pada abad ke-14, cookie dimakan oleh semua tingkatan masyarakat di seluruh Eropa, mulai dari kalangan kerajaan hingga menengah ke bawah.
+        <br>
+        Setelah itu cookie tiba di Amerika pada abad ke-17. Macaroons dan gingerbread cookies adalah salah satu cookie Amerika yang populer saat itu.
+        <br>
+        Istilah umum untuk cookies adalah "biscuit" di sebagian besar negara berbahasa Inggris di luar Amerika Utara. Namun di beberapa wilayah istilah cookie dan biscuit digunakan.
+        <br>
+        Soft cookies adalah kue kering dengan tekstur renyah diluar dan lembut (chewy) di dalam. 
+        <br>
+        Ketika digigit kue ini agak sedikit lengket di bagian tengahnya karena adonannya yang masih lembut. 
+        <br>
+
+    </div>
+
+</html>
+<P><a href="#bahan">1.BAHAN-BAHAN</a></P>
+<P><a href="#pembuatan">2.PEMBUATAN</a></P>
+</body>
+
+<h1 id="bahan">1.BAHAN-BAHAN</h1>
+<free>
+<h4> 1. Butter 114gr
+    <br>
+    2. Gula pasir 100gr
+    <br>
+    3. Gula merah 110GR
+    <br>
+    4. 1 telur
+    <br>
+    5. 1 Sendok teh vanila
+    <br>
+    6. 1/2 Sendok teh garam
+    <br>
+    7. Tepung 160gr
+    <br>
+    8. Chococips 175gr
+    <br>
+</h4>
+    <a href="#atas">Kembali ke atas</a></free>
+
+
+<h1 id="pembuatan">2.PEMBUATAN</h1>
+<free>
+<h4> 1. Lelehkan butter sampai kecoklatan dan harum
+    <br>
+    2. Pindahkan ke wadah besar dan diamkan sampai dingin (kurang lebih 5 menit)
+    <br>
+    3. Masukkan gula pasir dan merah 
+    <br>
+    4. Masukkan telur
+    <br>
+    5. Masukkan vanila, garam, dan baking soda
+    <br>
+    6. Aduk hingga mengental, jika sudah masukkan tepung dan chocochips 
+    <br>
+    7. Aduk hingga semua tercampur rata 
+    <br>
+    8. Ambil secukupnya dan bulatkan lalu letakkan di atas 
+    <br>
+    9. Tabur garam (optional)
+    <br>
+    10. Dinginkan adonan 10 menit sampai 2 jam agar tekstur lebih chewy di kulkas
+    <br>
+    11. Baking 10-12menit di suhu 170-180, sebelum itu panaskan dulu oven di suhu 170-180 11 selama menit sebelum masuk
+    <br>
+    </h4>
+        <a href="#atas">Kembali ke atas</a></free>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Form Design</title>
+
+</head>
+<body>
+    <h2>Kolom Komentar</h2>
+    <style>
+     body {
+        front-family: Arial, sans-serif;
+     }
+    .comment-box {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid hsl(337, 74%, 72%);
+        border-radius: 5px;
+        background-color: #0000;
+    }
+    textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid hsl(337, 74%, 72%);
+        border-radius: 4px;
+        resize: vertical;
+    }
+    
+    button {
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: rgba(252, 113, 245, 0.8);
+        color: rgb(10, 0, 0);
+        border: none;
+        border-radius: 4px; 
+        cursor: pointer;
+    }
+    button:hover {
+        background-color:rgba(252, 113, 245, 0.8) ;
+    }
+    .comment-list {
+        margin-top: 20px;
+    }
+    .comment-item {
+        border-bottom: 1px solid #bd1a87;
+        padding: 10px 0;
+    }
+    </style>
+    
+    <div class="comment-box">
+        <h2>Tinggalkan Komentar</h2>
+        <textarea id="comment" placeholder="Tulis komentar Anda..."></textarea>
+        <button onclick="addComment()">Kirim Komentar</button>
+    </div>
+    
+    <div class="comments-list" id="commentsList">
+        <h3>Komentar:</h3>
+    </div>
+    
+    <script>
+    function addComment() {
+                // Ambil nilai dari textarea
+                const commentText = document.getElementById("comment").value;
+                
+                // Cek apakah teks tidak kosong
+                if(commentText.trim() !== "") {
+                    // Buat elemen paragraf baru untuk komentar
+                    const newComment = document.createElement("div");
+                    newComment.classList.add("comment-item");
+                    newComment.textContent = commentText;
+    
+                    // Tambahkan komentar ke daftar
+                    const commentsList = document.getElementById("commentsList");
+                    commentsList.appendChild(newComment);
+    
+                    // Kosongkan kolom textarea setelah komentar ditambahkan
+                    document.getElementById("comment").value = "";
+                } else {
+                    alert("Kolom komentar tidak boleh kosong!");
+                }
+            }
+    
+    </script> 
+    
+    
+      <br>
+    <br>
+    
+    <h3>JANGAN LUPA FOLLOW YAA</h3>
+    
+    <div class="social-links">
+        <a href="https://www.instagram.com/mlvee_o/profilecard/?igsh=MXJwNnVoZTkwZDVyaA==" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" wight="100" height="100">
+    </a>
+        
+    </div>
+
+        
+
